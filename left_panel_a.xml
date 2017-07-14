@@ -1,0 +1,54 @@
+<index image="left_panel_a.png" back=".">
+<title>Left Console Panel A</title>
+<!-- Test -->
+<area shape="rect" coords="70,67,95,92" title="Fire &amp; Overheat Detect Test Button" impl="yes"><ul><li>Checks continuity of both systems</li><li>Illuminates the ENG FIRE warning light and the OVERHEAT caution light</li></ul></area>
+<area shape="rect" coords="103,66,131,92" title="Oxygen Quantity Indicator Test Switch" impl="yes"><ul><li>OXY QTY - Drives the pointer on the Oxygen Supply Indicator to zero; as the pointer passes 0.5 liters, the OXY LOW caution light comes on</li><li>OFF - Normal operation</li></ul></area>
+<area shape="rect" coords="141,67,167,92" title="Malfunction and Indicator Lights Test Button" impl="yes"><ul><li>Operates relays which test the illumination of all warning, caution, and indicator lights, the LG warning horn, and the voice message system</li></ul></area>
+<area shape="rect" coords="60,131,85,156" title="Probe Heat Switch" impl="The switch is operable and the caution light comes on but no tests are performed"><ul><li>PROBE HEAT - Energizes the pitot, fuselage air data, AOA, and temperature probe heaters &amp; monitors while on the ground</li><li>OFF - Airborne, these systems are automatically on</li><li>TEST - PROBE HEAT caution light flashes 3-5 times per second</li></ul></area>
+<area shape="rect" coords="100,133,127,156" title="EPU Generator Test Switch" impl="yes"><ul><li>EPU/GEN - The test switch is spring loaded to the OFF position and provides a means to test the EPU generator and EPU PMG output to Flight Control System (FLCS) on the ground without using hydrazine</li><li>OFF - Normal operation</li></ul></area>
+<area shape="rect" coords="138,126,169,157" title="FLCS Power Indicator Lights" impl="yes"><ul><li>Illuminate to indicate proper power output of the Flight Control Computer (FLCC) during FLCS power tests</li></ul></area>
+<area shape="rect" coords="137,178,159,203" title="FLCS Power Test Switch" impl="yes"><ul><li>TEST - Tests FLCC power output and EPU electrical power output</li><li>NORM - Normal operation</li><li>MAINT - Not implemented</li></ul></area>
+<area shape="rect" coords="55,29,179,268" title="Test Panel" />
+<!-- Anti G -->
+<area shape="rect" coords="94,375,134,415" title="Anti-G Test Button" impl="no"><ul><li>Inflates the G suit and tests the pressure-breathing system</li></ul></area>
+<area shape="rect" coords="55,270,179,439" title="Anti G Panel" />
+<!-- Flight Control -->
+<area shape="rect" coords="248,63,273,92" title="Digital Backup Switch" impl="The switch is operable and the DBU eyebrow light is illuminated but the backup software is not implemented"><ul><li>DIGITAL BACKUP - Selects backup software in the Flight Control Computer (FLCC) in the event of software failures in the primary program</li><li>OFF - Normal operation using primary software</li></ul></area>
+<area shape="rect" coords="332,63,356,92" title="Alternate Flaps Switch" impl="yes"><ul><li>ALT FLAPS EXTEND - TEFs are extended</li><li>NORM - the trailing edge flaps (TEFs) are controlled by the landing gear status</li></ul></area>
+<area shape="rect" coords="289,130,313,160" title="Manual Terrain Following Radarly-up Switch" impl="no"><ul><li>Meant to disable or enable the FLYUP protection in manual TF (Terrain Following) but is not implemented in current Block-16C</li></ul></area>
+<area shape="rect" coords="348,126,379,156" title="Run / Fail Lights" impl="yes"><ul><li>RUN - Indicates a FLCS BIT test is running</li><li>FAIL - Indicates a test failure</li></ul></area>
+<area shape="rect" coords="232,195,258,224" title="Leading Edge Flaps (LEFs) Switch" impl="yes"><ul><li>LE FLAPS LOCK - Manually locks the LEFs in position</li><li>AUTO - LEFs are automatically controlled as a function of mach, altitude, and AOA</li></ul></area>
+<area shape="rect" coords="301,194,328,220" title="FLCS Reset Switch" impl="yes"><ul><li>FLCS RESET - Performs servo or electronic reset of FLCS and it clears all warning and caution lights if successful</li><li>OFF - Normal operation</li></ul></area>
+<area shape="rect" coords="368,195,394,224" title="FLCS Built-in Test (BIT) Switch" impl="yes"><ul><li>BIT - On the ground, performs FLCS test which takes ~45 seconds to complete</li><li>OFF - Normal operations</li></ul></area>
+<area shape="rect" coords="180,38,422,242" title="Flight Control Panel" />
+<!-- Manual Trim -->
+<area shape="rect" coords="208,266,226,329" title="Roll Trim Wheel and Indicator" impl="yes"><ul><li>Trims ROLL rate (levels the wings)</li><li>Indicates ROLL trim setting</li></ul></area>
+<area shape="rect" coords="344,263,370,292" title="Trim/Autopilot Disconnect Switch" impl="yes"><ul><li>NORM - Enables the Trim switch on the HOTAS and permits autopilot engagement</li><li>DISC - Disables the Trim switch on the HOTAS and prohibits autopilot engagement</li></ul></area>
+<area shape="rect" coords="222,366,257,402" title="Yaw Trim Knob" impl="yes"><ul><li>Trims YAW rate (nose left/right)</li></ul></area>
+<area shape="rect" coords="322,387,384,404" title="Pitch Trim Wheel and Indicator" impl="yes"><ul><li>Trims PITCH rate (nose up/down)</li><li>Indicates PITCH trim setting</li></ul></area>
+<area shape="rect" coords="180,243,422,417" title="Manual Trim Panel" />
+<!-- Fuel Control -->
+<area shape="rect" coords="452,76,483,123" title="Fuel Master Switch" impl="yes"><ul><li>MASTER (guarded) - Opens main fuel shutoff valve</li><li>OFF (unguarded) - Closes main fuel shutoff valve</li></ul></area>
+<area shape="rect" coords="497,97,520,127" title="Tank Inerting Switch" impl="no"><ul><li>Reduces tank pressurization and allows Halon gas flow to F-1, A-1, and internal wing tanks</li></ul></area>
+<area shape="circ" coords="569,109,22" title="Engine Feed Knob" impl="yes"><ul><li>OFF - De-energizes all electric fuel pumps</li><li>NORM - Energizes all pumps Center of Gravity (CoG) is maintained automatically</li><li>AFT - Transfers fuel from aft tanks to engine and forward tanks (CoG moves forward)</li><li>FWD - Transfers fuel from forward tanks to engine and aft (CoG moves aft)</li></ul></area>
+<area shape="rect" coords="613,85,636,116" title="Air Refuel Switch" impl="yes"><ul><li>OPEN - Opens refueling door; places FLCS in reduced gains below 400 kts; and depressurizes external tanks</li><li>CLOSE - Closes refueling door; returns FLCS to normal gains; and pressurizes external tanks</li></ul></area>
+<area shape="rect" coords="423,54,664,146" title="Fuel Control Panel" />
+<!-- Auxiliary Communications -->
+<area shape="circ" coords="471,200,22" title="IFF Master Knob" impl="no"><ul><li>OFF - Powered down</li><li>STBY - Powered up, but not transmitting</li><li>LOW/NORM - IFF recognition and reply</li><li>EMER - Transmits an emergency-indicating pulse</li></ul></area>
+<area shape="rect" coords="520,175,543,203" title="Mode-4 Code Switch" impl="no"><ul><li>ZERO - Transponder code is erased</li><li>A/B - Transponder code selection via upfront controls (A) or backup controls (B)</li><li>HOLD - Retain transponder code settings after flight</li></ul></area>
+<area shape="circ" coords="608,191,18" title="Communications, Navigation, and IFF (CNI) Knob" impl="yes"><ul><li>UFC - Provides for normal control of CNI using the Up Front Controls (UFC)</li><li>BACKUP - Provides for alternate operation of UHF, TACAN, and IFF (Mode 4 and EMER functions only) using the backup controls on this panel</li></ul></area>
+<area shape="rect" coords="449,255,473,281" title="IFF Mode 4 Reply Switch (Backup Only)" impl="no"><ul><li>A - Selects Mode 4 Code A</li><li>B - Selects Mode 4 Code B</li><li>OUT - Disables Mode 4 reply</li></ul></area>
+<area shape="rect" coords="485,255,511,280" title="IFF Mode 4 Monitor Switch (Backup Only)" impl="no"><ul><li>MONITOR AUDIO - Enables 0.5-second tone when not replying to valid M-4 interrogations</li><li>OUT - Disables M-4 monitor function</li></ul></area>
+<area shape="rect" coords="520,230,607,288" title="Backup TACAN Channel Selector" impl="yes"><ul><li></li>The desired channel and band are set via the small bottom pushbutton levers</ul></area>
+<area shape="rect" coords="611,244,637,270" title="Backup TACAN Function Switch" impl="Only T/R and A/A TR modes are implemented"><ul><li>T/R - Interrogates and receives signals from TACAN ground stations for DME information</li><li>A/A TR - Interrogates and receives signals from aircraft</li><li>REC - Receive-only mode (bearing only; no distance information)</li></ul></area>
+<area shape="rect" coords="423,147,664,305" title="Auxiliary Communications Panel" />
+<!-- External Lighting Control -->
+<area shape="rect" coords="456,332,482,358" title="Anti-Collision Switch" impl="yes"><ul><li>Turns on the white anti-collision strobe light on top of the vertical tail</li></ul></area>
+<area shape="rect" coords="507,332,533,358" title="Flash/Steady Switch" impl="yes"><ul><li>Controls the flash/steady state of the lights controlled by the WING/TAIL &amp; FUSELAGE switches</li></ul></area>
+<area shape="rect" coords="553,339,579,366" title="Wing/Tail Switch" impl="Turns lights ON or OFF in conjunction with the FUSELAGE lights"><ul><li>BRT - Turns on the red and green wingtip and inlet lights, and the white light at trailing edge of the vertical tail</li><li>OFF - Turns off the inlet and vertical tail lights; allows the red and green wingtip lights to be controlled by the FORM knob</li><li>DIM - Turns all lights on dim</li></ul></area>
+<area shape="rect" coords="608,339,634,366" title="Fuselage Switch" impl="Turns lights ON or OFF in conjunction with the WING/TAIL lights"><ul><li>BRT - Turns the white floodlights at the base of the vertical tail on bright</li><li>OFF - Turns off the white floodlights</li><li>DIM - Turns them on dim</li></ul></area>
+<area shape="circ" coords="478,415,18" title="Formation Light Knob" impl="no"><ul><li>Varies the intensity of the white formation lights on top and bottom of fuselage and, when the WING/TAIL switch is OFF, varies the red and green wing-tip lights</li></ul></area>
+<area shape="rect" coords="531,398,555,428" title="Master Switch" impl="yes"><ul><li>Enables/disables all external lighting except landing and taxi lights, which have a separate switch on the left aux console</li></ul></area>
+<area shape="circ" coords="607,415,18" title="Aerial Refueling Light Knob" impl="no"><ul><li>Varies the intensity of the aerial refueling door lights if the AIR REFUEL switch is open</li></ul></area>
+<area shape="rect" coords="423,306,664,446" title="External Lighting Control  Panel" />
+</index>

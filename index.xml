@@ -1,0 +1,10 @@
+<index image="cockpit.png">
+<title>F-16 Block 50/52 cockpit - Falcon BMS</title>
+<area shape="rect" coords="180,390,272,508" title="Left Console Panel A" href="left_panel_a.xml" />
+<area shape="poly" coords="201,271,273,271,273,388,185,388,185,349,201,349" title="Left Console Panel B" href="left_panel_b.xml" />
+<area shape="poly" coords="232,163,277,157,274,260,191,256" title="Left Auxiliary Console" href="left_aux.xml" />
+<area shape="poly" coords="332,1,387,1,478,130,478,150,389,150,389,210,330,210,330,150,240,150,240,130" title="Instrument Panel" href="front_panel.xml" />
+<area shape="poly" coords="442,152,487,154,529,259,466,263,465,235,443,229" title="Right Auxiliary Console" href="right_aux.xml" />
+<area shape="poly" coords="469,270,529,270,529,369,445,369,445,300,469,300" title="Right Console Panel G" href="right_panel_g.xml" />
+<area shape="rect" coords="462,371,535,511" title="Right Console Panel H" href="right_panel_h.xml" />
+</index>

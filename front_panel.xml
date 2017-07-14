@@ -1,0 +1,7 @@
+<index image="front_panel.png" back=".">
+<title>Instrument Panel</title>
+<area shape="poly" coords="293,4,425,4,435,133,508,133,508,162,435,162,435,225,285,225,285,133" title="HUD / UFC" href="hud-ufc.xml" />
+<area shape="poly" coords="197,133,281,133,281,344,162,344,149,375,55,375,55,339,102,339,115,223" title="Front Left Side" href="front_left.xml" />
+<area shape="rect" coords="285,275,435,539" title="Front Center" href="front_center.xml" />
+<area shape="poly" coords="436,163,547,163,603,224,619,342,662,342,662,387,571,387,558,344,436,344" title="Front Right Side" href="front_right.xml" />
+</index>
