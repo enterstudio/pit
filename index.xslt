@@ -7,6 +7,9 @@
 <html>
 
 <head>
+<meta name="author" content="Hugo Leisink" />
+<meta name="copyright" content="Copyright (c) by Hugo Leisink" />
+<meta name="description" content="Explains the F-16 block 50/52 cockpit as implemented in Falcon BMS." />
 <title>Falcon BMS cockpit</title>
 <link rel="stylesheet" type="text/css" href="css/cockpit.css" />
 <script type="text/javascript" src="js/jquery.min.js" />
@@ -39,6 +42,7 @@
 </head>
 
 <body>
+<div class="opacity">
 <xsl:if test="/index/@debug='yes'">
 <div style="position:absolute ; top:10px ; left:10px">x: <input type="text" id="cursorX" /><br />y: <input type="text" id="cursorY" /></div>
 </xsl:if>
@@ -57,6 +61,7 @@
 </xsl:for-each>
 </map>
 <div id="info" class="info">info</div>
+</div>
 </div>
 </div>
 </body>

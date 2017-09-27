@@ -8,16 +8,20 @@ html {
 }
 
 body {
-	background-color:#a0a0a0;
+	background:url(../images/background.jpg) center top no-repeat;
 	font-family:sans-serif;
-	padding:10px;
 	color:#ffffff;
+}
+
+div.opacity {
+	background-color:rgba(255, 255, 255, 0.75);
+	overflow:hidden;
 }
 
 div.wrapper {
 	width:750px;
 	background-color:#404040;
-	margin:0 auto 300px auto;
+	margin:10px auto 300px auto;
 	padding:20px 20px 60px 20px;
 	position:relative;
 	border-radius:10px;

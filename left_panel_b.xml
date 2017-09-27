@@ -1,58 +1,60 @@
 <index image="left_panel_b.png" back=".">
 <title>Left Console Panel B</title>
 <!-- EPU control panel -->
-<area shape="rect" coords="101,469,144,494" title="EPU Switch" impl="yes"><ul><li>ON - Commands EPU to run regardless of failure conditions</li><li>NORM - Armed for automatic operation</li><li>OFF - Terminates EPU operation in flight, except in the case of main or standby electrical generator failures</li></ul></area>
-<area shape="circ" coords="152,434,11" title="EPU Run Light" impl="yes"><ul><li>Illuminates when the EPU turbine speed is within the proper range</li></ul></area>
-<area shape="rect" coords="125,388,152,416" title="EPU Air/Hydrazine Light" impl="yes"><ul><li>Illuminates AIR/HYDRAZINE when the EPU is commanding hydrazine for operation</li><li>Illuminates AIR when the EPU is providing standby electrical power</li></ul></area>
+<area shape="rect" coords="101,469,144,494" title="EPU Switch" impl="yes"><ul><li>ON - Commands EPU to run regardless of failure conditions.</li><li>NORM - Armed for automatic operation.</li><li>OFF - Terminates EPU operation in flight, except in the case of main or standby electrical generator failures.</li></ul></area>
+<area shape="circ" coords="152,434,11" title="EPU Run Light" impl="yes"><ul><li>Illuminates when the EPU turbine speed is within the proper range.</li></ul></area>
+<area shape="rect" coords="125,388,152,416" title="EPU Air/Hydrazine Light" impl="yes"><ul><li>Illuminates AIR/HYDRAZINE when the EPU is commanding hydrazine for operation.</li><li>Illuminates AIR when the EPU is providing standby electrical power.</li></ul></area>
 <area shape="poly" coords="104,353,170,353,170,532,92,532" title="EPU control panel" />
 <!-- Electrical Systems - Controls and Indicators Panel -->
-<area shape="rect" coords="193,406,213,429" title="Main Power Switch" impl="yes"><ul><li>MAIN PWR - Connects external power or the main generators to the electrical system (If no a/c power is available, connects aircraft battery to the battery buses)</li><li>BATT - Connects aircraft battery to the battery buses</li><li>OFF - Disconnects aircraft battery from the battery buses (canopy operation is available after engine shutdown)</li></ul></area>
-<area shape="circ" coords="213,472,10" title="Electrical Caution Reset Button" impl="yes"><ul><li>Resets main and standby generators, over-current protection units, and ELEC SYS caution lights</li></ul></area>
-<area shape="rect" coords="207,500,230,525" title="Aircraft Battery Indicator Lights" impl="yes"><ul><li>TO FLCS - Indicates battery bus power going to one or more of the four FLCS electrical branches</li><li>FLCS RLY - Indicates that voltage on one or more of the FLCS branches is inadequate or zero</li><li>FAIL - Indicates aircraft battery failure</li></ul></area>
-<area shape="rect" coords="235,408,260,433" title="Split Indicator Light" impl="yes"><ul><li>FLCS PMG - None of the FLCS branches are receiving power</li><li>MAIN GEN - External or main generator power is not connected to one or both essential a/c buses and has likely failed</li></ul></area>
-<area shape="rect" coords="235,434,260,458" title="Indicator Light" impl="yes"><ul><li>STBY GEN - Standby generator power is not available</li></ul></area>
-<area shape="rect" coords="234,459,260,484," title="Split Indicator Light" impl="yes"><ul><li>EPU GEN - Indicates the EPU has been commanded on but is not providing power to both emergency a/c buses</li><li>EPU PMG - Indicates the EPU has been commanded on but EPU generator power is not available to all branches of the FLCS</li></ul></area>
+<area shape="rect" coords="193,406,213,429" title="Main Power Switch" impl="yes"><ul><li>MAIN PWR - Connects external power or the main generators to the electrical system (If no a/c power is available, connects aircraft battery to the battery buses).</li><li>BATT - Connects aircraft battery to the battery buses.</li><li>OFF - Disconnects aircraft battery from the battery buses (canopy operation is available after engine shutdown).</li></ul></area>
+<area shape="circ" coords="213,472,10" title="Electrical Caution Reset Button" impl="yes"><ul><li>Resets main and standby generators, over-current protection units, and ELEC SYS caution lights.</li></ul></area>
+<area shape="rect" coords="207,500,230,525" title="Aircraft Battery Status Light" impl="yes"><ul><li>TO FLCS - Illuminates if battery power is being used over at least one FLCS channel. In the air it only illuminates if that is true and voltage is 25V or less.</li><li>FLCS RLY - Indicates that voltage on one or more of the FLCS branches is inadequate or zero.</li></ul></area>
+<area shape="rect" coords="235,500,260,525" title="Aircraft Battery Failure Light" impl="yes"><ul><li>Illuminates in the air if battery voltage drops below 20V and on the ground if there is a battery failure or cell voltage imbalance.</li></ul></area>
+<area shape="rect" coords="235,408,260,433" title="Split Indicator Light" impl="yes"><ul><li>FLCS PMG - Iluminates in the air if none of the FLCS branches are receiving power. Illuminates on the ground if any FLCS branch is not receiving power.</li><li>MAIN GEN - External or main generator power is not connected to one or both essential a/c buses and has likely failed.</li></ul></area>
+<area shape="rect" coords="235,434,260,458" title="Indicator Light" impl="yes"><ul><li>STBY GEN - Standby generator power is not available. Not operational in the real jet.</li></ul></area>
+<area shape="rect" coords="234,459,260,484," title="Split Indicator Light" impl="yes"><ul><li>EPU GEN - Indicates the EPU has been commanded on but is not providing power to both emergency a/c buses.</li><li>EPU PMG - Indicates the EPU has been commanded on but EPU generator power is not available to all branches of the FLCS.</li></ul></area>
 <area shape="rect" coords="171,394,280,532" title="Electrical Systems - Controls and Indicators Panel" />
 <!-- Engine and Jet Start Control Panel -->
-<area shape="rect" coords="233,133,253,155" title="Jet Fuel Start (JFS) Switch and JFS RUN Light" impl="START1 is not functional"><ul><li>START1 - Vents one of the hydraulic JFS accumulators to the hydraulic start motor</li><li>OFF - Normal switch position. The JFS can be shut down at anytime by selecting OFF. The switch will return to OFF automatically during a normal ground start at 50 percent rpm.</li><li>START2 - Vents both accumulators to the hydraulic start motor</li><li>RUN light - Illuminates when the JFS engine is running</li></ul></area>
-<area shape="rect" coords="211,196,239,240" title="Engine Control Switch" impl="yes"><ul><li>PRI - Primary engine computer operation (Guarded position)</li><li>SEC - Secondary engine computer operation (Unguarded position)</li></ul></area>
-<area shape="rect" coords="215,278,235,299" title="Afterburner Reset Switch" impl="no"><ul><li>AB RESET - Inoperative</li><li>NORM - Normal (de-energized) position</li><li>ENG DATA - Used to record engine data for an 8 second period</li></ul></area>
-<area shape="rect" coords="215,354,236,379" title="Max Power Switch" impl="no"><ul><li>Inoperative in the current Block F-16C</li></ul></area>
+<area shape="circ" coords="202,145,7" title="JFS RUN Light" impl="yes"><ul><li>Illuminates when the JFS engine is running.</li></ul></area>
+<area shape="rect" coords="233,133,253,155" title="Jet Fuel Start (JFS) Switch and JFS RUN Light" impl="START1 is not functional"><ul><li>START1 - Vents one of the hydraulic JFS accumulators to the hydraulic start motor.</li><li>OFF - Normal switch position. The JFS can be shut down at anytime by selecting OFF. The switch will return to OFF automatically during a normal ground start at 50 percent rpm.</li><li>START2 - Vents both accumulators to the hydraulic start motor.</li></ul></area>
+<area shape="rect" coords="211,196,239,240" title="Engine Control Switch" impl="yes"><ul><li>PRI - Primary engine computer operation (Guarded position).</li><li>SEC - Secondary engine computer operation (Unguarded position).</li></ul></area>
+<area shape="rect" coords="215,278,235,299" title="Afterburner Reset Switch" impl="no"><ul><li>AB RESET - Inoperative.</li><li>NORM - Normal (de-energized) position.</li><li>ENG DATA - Used to record engine data for an 8 second period.</li></ul></area>
+<area shape="rect" coords="215,354,236,379" title="Max Power Switch" impl="no"><ul><li>Inoperative in the current Block F-16C.</li></ul></area>
 <area shape="rect" coords="171,105,280,394" title="Engine and Jet Start Control Panel" />
 <!-- Airborne Video Tape Recorder Control Panel -->
-<area shape="circ" coords="442,503,20" title="Display Select Switch" impl="no"><ul><li>Selects video source to be recorded</li></ul></area>
-<area shape="rect" coords="373,477,393,498" title="On/Auto/Off Switch" impl="yes"><ul><li>ON - Continuous ACMI recording</li><li>AUTO - 30 seconds of ACMI recording at trigger detent or weapon pickle</li><li>OFF - Cancel recording</li></ul></area>
-<area shape="circ" coords="330,511,10" title="Test Switch" impl="no"><ul><li>Indicates system has power</li></ul></area>
-<area shape="rect" coords="310,468,352,483" title="Cockpit TV Sensor (CTVS) and AVTR Lights" impl="Both lights illuminate, but AVTR doesn't actually record MFD/HUD video"><ul><li>Lights are illuminated Amber in AUTO mode and Green in ON mode</li><li>CTVS - Indicates that the AVTR is recording video w/out HUD</li><li>AVTR - Indicates AVTR is recording MFD or HUD video</li></ul></area>
+<area shape="circ" coords="442,503,20" title="Display Select Switch" impl="no"><ul><li>Selects video source to be recorded.</li></ul></area>
+<area shape="rect" coords="373,477,393,498" title="On/Auto/Off Switch" impl="yes"><ul><li>ON - Continuous ACMI recording.</li><li>AUTO - 30 seconds of ACMI recording at trigger detent or weapon pickle.</li><li>OFF - Cancel recording.</li></ul></area>
+<area shape="circ" coords="330,511,10" title="Test Switch" impl="no"><ul><li>Indicates system has power.</li></ul></area>
+<area shape="rect" coords="310,468,352,483" title="Cockpit TV Sensor (CTVS) and AVTR Lights" impl="Both lights illuminate, but AVTR doesn't actually record MFD/HUD video"><ul><li>Lights are illuminated Amber in AUTO mode and Green in ON mode.</li><li>CTVS - Indicates that the AVTR is recording video w/out HUD.</li><li>AVTR - Indicates AVTR is recording MFD or HUD video.</li></ul></area>
 <area shape="rect" coords="281,450,492,532" title="Airborne Video Tape Recorder Control Panel" />
 <!-- Electronic Countermeasures (ECM) Control Panel -->
-<area shape="rect" coords="302,361,324,384" title="ECM Power" impl="Only OPR and OFF are working"><ul><li>OPR - Power is provided to the ECM pod (if loaded)</li><li>STBY - ECM is in Standby mode</li><li>OFF - No power is provided</li></ul></area>
-<area shape="rect" coords="353,370,471,430" title="Other ECM Functions" impl="no"><ul><li>The remaining switches, buttons and indicators on this panel are classified and/or non-functional</li></ul></area>
+<area shape="rect" coords="302,361,324,384" title="ECM Power" impl="Only OPR and OFF are working"><ul><li>OPR - Power is provided to the ECM pod (if loaded).</li><li>STBY - ECM is in Standby mode.</li><li>OFF - No power is provided.</li></ul></area>
+<area shape="rect" coords="353,370,471,430" title="Other ECM Functions" impl="no"><ul><li>The remaining switches, buttons and indicators on this panel are classified and/or non-functional.</li></ul></area>
 <area shape="rect" coords="281,353,492,449" title="Electronic Countermeasures (ECM) Control Panel" />
 <!-- Audio 1 & 2 Control Panels -->
-<area shape="rect" coords="303,200,381,234" title="COMM 1 (UHF) and COMM 2 (VHF) Power/Volume" impl="yes"><ul><li>Left for off; right for volume</li></ul></area>
-<area shape="rect" coords="299,251,385,293" title="COMM 1 (UHF) and COMM 2 (VHF) Modes" impl="yes"><ul><li>OFF - Disables squelch</li><li>SQL - Enables squelch</li><li>GD - Tunes to the guard frequency</li></ul></area>
-<area shape="circ" coords="409,220,12" title="Secure Voice Knob" impl="no"><ul><li>Secure Voice (KY-58) radio volume control</li></ul></area>
-<area shape="circ" coords="409,273,12" title="Terrain Following Knob" impl="no"><ul><li>TF volume control</li></ul></area>
-<area shape="circ" coords="452,220,16" title="Missile Tone Knob" impl="yes"><ul><li>IR missile seeker head volume control</li></ul></area>
-<area shape="circ" coords="452,274,11" title="Threat Tone Knob" impl="yes"><ul><li>Threat Warning System volume control</li></ul></area>
-<area shape="circ" coords="320,327,16" title="Intercom Power/Volume Knob" impl="yes"><ul><li>Power/volume control of the intercom system (internal audio systems, crew chief, boom operator, etc.)</li></ul></area>
-<area shape="circ" coords="364,322,12" title="TACAN Power/Volume Knob" impl="no"><ul><li>Power/Volume control for audible TACAN station ID signal</li></ul></area>
-<area shape="circ" coords="409,322,12" title="ILS Power/Volume Knob" impl="yes"><ul><li>Power/Volume control for audible ILS receiver tone</li></ul></area>
-<area shape="rect" coords="444,320,465,341" title="Hot Mic / Cipher Switch" impl="no"><ul><li>HOT MIC - Activate communications to crew chief/boom operator</li><li>OFF - Deactivates HOT MIC and CIPHER functions</li><li>CIPHER - Limit UHF and VHF traffic to secure voice only</li></ul></area>
+<area shape="rect" coords="303,200,381,234" title="COMM 1 (UHF) and COMM 2 (VHF) Power/Volume" impl="yes"><ul><li>Left for off; right for volume.</li></ul></area>
+<area shape="rect" coords="299,251,385,293" title="COMM 1 (UHF) and COMM 2 (VHF) Modes" impl="yes"><ul><li>OFF - Disables squelch.</li><li>SQL - Enables squelch.</li><li>GD - Tunes to the guard frequency.</li></ul></area>
+<area shape="circ" coords="409,220,12" title="Secure Voice Knob" impl="no"><ul><li>Secure Voice (KY-58) radio volume control.</li></ul></area>
+<area shape="circ" coords="409,273,12" title="Terrain Following Knob" impl="no"><ul><li>TF volume control. Does nothing in the real jet.</li></ul></area>
+<area shape="circ" coords="452,220,16" title="Missile Tone Knob" impl="yes"><ul><li>IR missile seeker head volume control.</li></ul></area>
+<area shape="circ" coords="452,274,11" title="Threat Tone Knob" impl="yes"><ul><li>Threat Warning System volume control.</li></ul></area>
+<area shape="circ" coords="320,327,16" title="Intercom Power/Volume Knob" impl="yes"><ul><li>Power/volume control of the intercom system (internal audio systems, crew chief, boom operator, etc.).</li></ul></area>
+<area shape="circ" coords="364,322,12" title="TACAN Power/Volume Knob" impl="no"><ul><li>Power/Volume control for audible TACAN station ID signal.</li></ul></area>
+<area shape="circ" coords="409,322,12" title="ILS Power/Volume Knob" impl="yes"><ul><li>Power/Volume control for audible ILS receiver tone.</li></ul></area>
+<area shape="rect" coords="444,320,465,341" title="Hot Mic / Cipher Switch" impl="no"><ul><li>HOT MIC - Activate communications to crew chief/boom operator.</li><li>OFF - Deactivates HOT MIC and CIPHER functions.</li><li>CIPHER - Limit UHF and VHF traffic to secure voice only.</li></ul></area>
 <area shape="rect" coords="281,188,492,352" title="Audio 1 &amp; 2 Control Panels" />
 <!-- UHF Backup Radio Panel -->
-<area shape="circ" coords="329,160,20" title="UHF Backup Function Knob" impl="ADF is not functional"><ul><li>OFF - Backup UHF is not powered</li><li>MAIN - Radio operates on selected frequency</li><li>BOTH - Radio operates on selected frequency and receives only on the GUARD frequency</li><li>ADF - Automatic Direction Finder</li></ul></area>
-<area shape="circ" coords="387,149,9" title="UHF Backup Volume Knob" impl="Balances AI volume with IVC volume"><ul><li>Set volume for UHF radio in BACKUP mode</li></ul></area>
-<area shape="circ" coords="445,160,20" title="UHF Backup Mode Knob" impl="MANUAL is not functional"><ul><li>MANUAL - Freq set by manual input</li><li>PRESET - Freq set by Channel Knob</li><li>GUARD - Transmit/receive on the guard freq</li></ul></area>
-<area shape="rect" coords="393,163,422,180" title="Squelch Switch" impl="no"><ul><li>Enables/Disables squelch function</li></ul></area>
-<area shape="circ" coords="363,175,5" title="Tone Button" impl="no"><ul><li>When pressed and released gives audible beep to verify entries</li></ul></area>
-<area shape="rect" coords="297,99,478,126" title="UHF Backup Radio Manual Frequency Knobs" impl="no"><ul><li>Allows manual input of UHF radio frequencies including:</li><li>A32 Anti Jam Knob; A=Anti Jam mode</li></ul></area>
-<area shape="circ" coords="320,75,7" title="Test Display Button" impl="no"><ul><li>Tests for INOP display digits</li></ul></area>
-<area shape="circ" coords="453,75,7" title="Status Button" impl="no"><ul><li>Push to display mode radio is presently in (e.g. VEROP, M-WORD)</li></ul></area>
-<area shape="circ" coords="458,40,13" title="UHF Backup Radio Channel Knob &amp; Display" impl="yes"><ul><li>Permits clickable selection of 20 preset UHF frequencies</li></ul></area>
+<area shape="circ" coords="329,160,20" title="UHF Backup Function Knob" impl="ADF is not functional"><ul><li>OFF - Backup UHF is not powered.</li><li>MAIN - Radio operates on selected frequency.</li><li>BOTH - Radio operates on selected frequency and receives only on the GUARD frequency.</li><li>ADF - Automatic Direction Finder.</li></ul></area>
+<area shape="circ" coords="387,149,9" title="UHF Backup Volume Knob" impl="Balances AI volume with IVC volume"><ul><li>Set volume for UHF radio in BACKUP mode.</li></ul></area>
+<area shape="circ" coords="445,160,20" title="UHF Backup Mode Knob" impl="yes"><ul><li>MANUAL - Freq set by manual input.</li><li>PRESET - Freq set by Channel Knob.</li><li>GUARD - Transmit/receive on the guard freq.</li></ul></area>
+<area shape="rect" coords="393,163,422,180" title="Squelch Switch" impl="no"><ul><li>Enables/Disables squelch function.</li></ul></area>
+<area shape="circ" coords="363,175,5" title="Tone Button" impl="no"><ul><li>T - the radio listens for a time-of-day transmission from another radio on the frequency to sync its clock. When selected with the 'TEST DISPLAY' button held, it performs an emergency startup of the TOD clock.</li><li>TONE - A tone and the time-of-day is transmitted over the UHF frequency, for syncing HAVE QUICK clocks.</li></ul></area>
+<area shape="rect" coords="297,99,478,126" title="UHF Backup Radio Manual Frequency Knobs" impl="yes"><ul><li>Allows manual input of UHF radio frequencies.</li><li>A/3/2 switch - Sets the first digit of a UHF frequency or selects a HAVE QUICK II channel when in 'A'.</li></ul></area>
+<area shape="circ" coords="320,75,7" title="Test Display Button" impl="no"><ul><li>Tests for INOP display digits.</li></ul></area>
+<area shape="circ" coords="453,75,7" title="Status Button" impl="no"><ul><li>Push to display mode radio is presently in (e.g. VEROP, M-WORD).</li></ul></area>
+<area shape="circ" coords="458,40,13" title="UHF Backup Radio Channel Knob &amp; Display" impl="yes"><ul><li>Permits clickable selection of 20 preset UHF frequencies.</li></ul></area>
 <area shape="rect" coords="281,8,492,187" title="UHF Backup Radio Panel" />
 <!-- Manual Pitch -->
-<area shape="rect" coords="215,36,237,58" title="Manual Pitch Override (MPO) Switch" impl="yes"><ul><li>NORM - Normal operation of AOA and g limiters</li><li>OVRD - Overrides the AOA/g limiter and enables unrestricted control of the horizontal tails to allow pitch commands in order to recover from a deep stall</li></ul></area>
+<area shape="rect" coords="215,36,237,58" title="Manual Pitch Override (MPO) Switch" impl="yes"><ul><li>NORM - Normal operation of AOA and g limiters.</li><li>OVRD - Overrides the AOA/g limiter and enables unrestricted control of the horizontal tails to allow pitch commands in order to recover from a deep stall.</li></ul></area>
 <area shape="rect" coords="171,8,280,104" title="Manual Pitch Panel" />
 </index>
