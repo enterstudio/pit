@@ -1,5 +1,9 @@
-$(function() {
-	$('img.map').maphilight();
+$(document).ready(function() {
+	$('img.map').maphilight({
+		strokeColor:'e0e000',
+		strokeWidth:2,
+		fill:false
+	});
 });
 
 function show_info(index) {

@@ -1,5 +1,8 @@
 <index image="front_right.png" back="front_panel.xml">
 <title>Front Right Side</title>
+<!-- Multi-Function Display -->
+<area shape="rect" coords="149,179,395,426" title="Right Multi-Function Display (MDF)" impl="yes"><ul><li>Interface to multiple information and configuration options.</li></ul></area>
+<!-- Miscellaneous Panels -->
 <area shape="rect" coords="145,14,289,62" title="Data Entry Display" impl="yes"><ul><li>Display for the Integrated Control Panel (ICP).</li></ul></area>
 <area shape="rect" coords="176,66,285,176" title="Standby Attitude Indicator" impl="yes"><ul><li>Self-contained, electrically powered vertical gyroscope that displays aircraft pitch and roll attitudes.</li></ul></area>
 <area shape="rect" coords="288,109,366,175" title="Fuel Flow Indicator" impl="yes"><ul><li>Displays total fuel flow to the engine in pounds per hour, with a range of 0 - 80,000 pph.</li></ul></area>

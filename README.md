@@ -1,7 +1,5 @@
-If you use the Hiawatha webserver, use the following configuration options:
+F-16 Block 50/52 cockpit
+========================
 
-	StartFile = index.xml
-	UseXSLT = yes
-
-For any other webserver, enable PHP execution, make index.php the start file
-and rewrite every request for a .xml file to index.php.
+This website explains the instruments of the F-16 Block 50/52 cockpit, as
+implemented in the Falcon BMS flight simulator.

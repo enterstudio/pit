@@ -1,6 +1,8 @@
 <index image="front_left.png" back="front_panel.xml">
 <title>Front Left Side</title>
-<!-- Miscellaneous Panel -->
+<!-- Multi-Function Display -->
+<area shape="rect" coords="336,190,595,448" title="Left Multi-Function Display (MDF)" impl="yes"><ul><li>Interface to multiple information and configuration options.</li></ul></area>
+<!-- Miscellaneous Panels -->
 <area shape="rect" coords="208,493,235,521" title="Autopilot Roll Switch" impl="yes"><ul><li>HDG SEL - Autopilot turns the aircraft to capture and maintain the heading selected by the heading reference marker on the HSI, as set by the HDG knob.</li><li>ATT HOLD - Autopilot maintains roll attitude.</li><li>STRG SEL - Autopilot steers aircraft to the selected steerpoint.</li></ul></area>
 <area shape="rect" coords="261,487,286,520" title="Autopilot Pitch Switch" impl="yes"><ul><li>ALT HOLD - Engages both pitch and roll autopilot control: maintain constant altitude and maintain roll as determined by the settings on the ROLL switch.</li><li>A/P OFF - Disengages pitch and roll axes of autopilot.</li><li>ATT HOLD - Engages both pitch and roll autopilot control: maintain constant pitch attitude and maintain roll as determined by the settings on the ROLL switch.</li></ul></area>
 <area shape="rect" coords="248,429,279,461" title="Terrain Following ADV Mode Indicator" impl="yes"><ul><li>The ADV mode indicator refers to the Terrain Following system which is set through the TFR page of the MFD.</li><li>ACTIVE - Illuminates when the TFR is enabled.</li><li>STBY - Illuminates when the automatic terrain following system (ATF) is ready to take over.</li><li>Note: While the indicators work, Terrain Following is not fully implemented (use with caution).</li></ul></area>

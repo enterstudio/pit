@@ -7,28 +7,18 @@
 <html>
 
 <head>
-<meta name="author" content="Hugo Leisink" />
+<meta name="author" content="Hugo Leisink - https://github.com/hsleisink/pit" />
 <meta name="copyright" content="Copyright (c) by Hugo Leisink" />
 <meta name="description" content="Explains the F-16 block 50/52 cockpit as implemented in Falcon BMS." />
 <title>Falcon BMS cockpit</title>
 <link rel="stylesheet" type="text/css" href="css/cockpit.css" />
 <script type="text/javascript" src="js/jquery.min.js" />
-<script type="text/javascript" src="js/jquery.maphilight.min.js"></script>
-<script type="text/javascript" src="js/cockpit.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="js/jquery.maphilight.min.js" />
+<script type="text/javascript" src="js/cockpit.js" />
 <xsl:if test="/index/@debug='yes'">
-	if (window.Event) {
-		document.captureEvents(Event.MOUSEMOVE);
-	}
-	document.onmousemove = getCursorXY;
-
-	function getCursorXY(e) {
-		var rect = document.getElementById("image").getBoundingClientRect();
-
-		document.getElementById('cursorX').value = ((window.Event) ? e.pageX : event.clientX + (document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft)) - Math.round(rect.left);
-		document.getElementById('cursorY').value = ((window.Event) ? e.pageY : event.clientY + (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop)) - Math.round(rect.top) - window.scrollY;
-	}
+<script type="text/javascript" src="js/debug.js" />
 </xsl:if>
+<script type="text/javascript">
 	var title = new Array();
 <xsl:for-each select="area">	title[<xsl:value-of select="position()" />] = `<xsl:value-of select="@title" />`;
 </xsl:for-each>
